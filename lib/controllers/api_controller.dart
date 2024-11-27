@@ -6,7 +6,7 @@ class ApiController implements ApiWorkflow {
   final DataApi dataApi = DataApi();    
 
   @override
-  Future<List<Entry>> getEntriesByCategory(String category) {
+  Future<List<Entry>> getEntriesByCategory({required String category}) { // category é obrigatório
     return dataApi.getEntriesByCategory(category: category);
   }
 }
