@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_clean_architecture_application/screens/components/category.dart';
+import 'package:flutter_clean_architecture_application/screens/favorites.dart';
 import 'package:flutter_clean_architecture_application/utils/const/categories.dart';
 
 class Categories extends StatelessWidget {
@@ -15,7 +16,7 @@ class Categories extends StatelessWidget {
                 IconButton(
                   icon: const Icon(Icons.bookmark),
                   onPressed: () {
-                    // Navigate to the search screen
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => Favorites())); // encaminha para a pagina de favoritos
                   },
                 ),
               ],
